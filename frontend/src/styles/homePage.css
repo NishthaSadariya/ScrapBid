@@ -1,0 +1,95 @@
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    display: block;
+    object-fit: cover;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Responsive font sizes */
+.text-overlay h1 {
+    font-size: clamp(22px, 4vw, 40px);
+    font-weight: bold;
+    text-transform: none;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.text-overlay p {
+    font-size: clamp(14px, 2.5vw, 24px);
+}
+
+/* Keep animation but ensure spacing is correct */
+.text-overlay h1 span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeInLetter 0.5s forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeInLetter {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Tablet View (768px - 1024px) */
+@media (max-width: 1024px) {
+    .text-overlay {
+        width: 90%;
+        padding: 3vw;
+        top: 45%; /* Adjusted for better alignment */
+    }
+
+    .text-overlay h1 {
+        white-space: normal; /* Allow wrapping */
+        font-size: 4vw; /* Responsive text */
+    }
+
+    .text-overlay p {
+        font-size: 2vw;
+    }
+}
+
+/* Mobile View (Below 768px) */
+@media (max-width: 768px) {
+    .text-overlay {
+        width: 95%;
+        padding: 10px;
+        top: 40%; /* Adjust for smaller screens */
+    }
+
+    .text-overlay h1 {
+        font-size: 5vw;
+        white-space: normal;
+    }
+
+    .text-overlay p {
+        font-size: 3vw;
+    }
+}
