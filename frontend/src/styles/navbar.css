@@ -1,0 +1,30 @@
+.main-container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 20px;
+    background-color:#012b5c;
+    color: #fff;
+    height:80px
+}
+
+.other-links a{
+    margin: 0 10px; 
+    color: #fff;
+    text-decoration: none
+}
+
+.profile svg{
+    width: 16px;
+    height:16px
+}
+
+.home svg{
+    width: 16px;
+    height:16px
+}
+
+.logout svg{
+    width: 16px;
+    height:16px
+}
