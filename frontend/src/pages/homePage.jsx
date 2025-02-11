@@ -18,20 +18,20 @@ const HomePage=()=>{
             </div>
 
             {/* text on image */}
-            <div className="text-overlay">
+            {/* <div className="text-overlay">
                 <h1>
                     {"Empowering Sustainability Through E-Waste Auctions".split("").map((char, index) => (
                         <span key={index} style={{ animationDelay: `${index * 0.05}s` }}>
-                            {char === " " ? "\u00A0" : char} {/* Preserves spaces */}
+                            {char === " " ? "\u00A0" : char} 
                         </span>
                     ))}
                 </h1>
                 <p>Join us in reducing waste and giving products a second life.</p>
-            </div>
+            </div> */}
 
             {/* after image section*/}
             <div style={{ display: 'flex', backgroundColor: '#51a0fc', height: '150px' }}>
-                {/* Blue background section */}
+                
             </div>
         </div> 
     );

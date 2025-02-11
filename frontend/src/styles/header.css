@@ -1,0 +1,37 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #01234a;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+
+.order{
+    position: relative;
+    color: #fff;
+}
+
+.order svg {
+    position: relative;
+    top: 10px; 
+    left: -10px;
+    height: 25px;
+    width: 25px;
+  }
+
+.heart svg{
+    position: relative;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    top:2.5px;   
+    right:2.5px;
+}
+
+.sign-in{
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}

@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar=()=>{
     return(
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 20px', backgroundColor:'#04428a',color: '#fff', height:'80px'}}>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px 20px', backgroundColor:'#012b5c',color: '#fff', height:'80px'}}>
            {/* logo */}
             <strong>ScrapBid</strong>
             {/* other links */}
