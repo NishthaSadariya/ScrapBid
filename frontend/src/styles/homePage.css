@@ -20,3 +20,120 @@ body, html {
     object-fit: cover;
 }
 
+.blue-flex-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #66c2f3; 
+    padding: 10px 10px; 
+    flex-wrap: wrap; /* Allows wrapping */
+}
+
+.inside-flex-items-main {
+    text-align: center;
+    color: white;
+    flex: 1;
+    max-width: 200px;
+    min-width: 200px; /* Ensures adaptability */
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* Icon styling */
+.icon svg {
+    width: 40px;
+    height: 40px;
+    stroke: white;
+}
+
+/* Text styling */
+.blue-flex-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.blue-flex-container p {
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+/* Responsive design: Stack items in one column for small screens */
+@media (max-width: 768px) {
+    .blue-flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inside-flex-items-main {
+        max-width: 90%; /* Takes most of the screen width */
+        margin-bottom: 15px; /* Adds spacing between stacked items */
+    }
+
+    .blue-flex-container p{
+        display: none;
+    }
+}
+
+.Hbid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: #fff;
+    flex-wrap: nowrap;
+}
+
+.Hbid p {
+    color: rgba(2, 2, 2, 0.804);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.Hbidicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between gavel and lines */
+}
+
+.Hbidicon::before,
+.Hbidicon::after {
+    content: "";
+    height: 2.5px;
+    background-color: #ccc;
+    width: 130px; 
+}
+
+.Hbidicon svg {
+    width: 2.5rem;
+    height: 1.8rem;
+}
+
+@media(max-width:768px){ /* tablet devices */ 
+    .Hbid p {
+        font-size: 1.5rem;
+    }
+    .Hbidicon svg {
+        width: 2rem;
+        height: 1.7rem;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile devices */
+    .Hbid p {
+        font-size: 1.2rem;
+    }
+    .Hbidicon svg {
+        width: 1.5rem;
+        height: 1.3rem;
+    }
+}
+
