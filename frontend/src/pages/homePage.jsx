@@ -2,8 +2,15 @@ import React from "react";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
 import "../styles/homePage.css";
+import ProductCard from "../components/productCard";
+import products from "../data/data"
 import { Gavel, Recycle, Truck, CreditCard } from "lucide-react";
 import {FaGavel} from "react-icons/fa"
+
+// Sort by highest bid price and select top 4 products
+const featuredProducts = [...products]
+  .sort((a, b) => parseFloat(b.price.replace("₹", "")) - parseFloat(a.price.replace("₹", "")))
+  .slice(0, 4);
 
 const HomePage = () => {
   return (
@@ -82,6 +89,15 @@ const HomePage = () => {
             <FaGavel size={40} color="#54a0c9"/>
         </div>
       </div>
+
+      {/* Highest bidding products */}
+      <div className="featured-products-container">
+        {featuredProducts.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
+      
+      
     </div>
   );
 };
