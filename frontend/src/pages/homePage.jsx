@@ -3,9 +3,9 @@ import Header from "../components/header";
 import Navbar from "../components/navbar";
 import "../styles/homePage.css";
 import ProductCard from "../components/productCard";
-import products from "../data/data"
+import products from "../data/data";
 import { Gavel, Recycle, Truck, CreditCard } from "lucide-react";
-import {FaGavel} from "react-icons/fa"
+import {FaGavel} from "react-icons/fa";
 
 // Sort by highest bid price and select top 4 products
 const featuredProducts = [...products]
@@ -20,7 +20,7 @@ const HomePage = () => {
 
       {/* Image Section */}
       <div className="image-container">
-        <img src="/Images/ScrapBidHome.jpg" alt="Background" />
+        <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background" />
       </div>
 
       {/* text on image */}
@@ -97,14 +97,14 @@ const HomePage = () => {
         ))}
       </div>
       
-      {/* category */}
+      {/* Category Section */}
       <div className="category-container">
 
         <div className="column-1">
           
           <div className="Computer-and-networking">
             <div className="Computer-and-networking-info">
-              <img src="/Images/background 1.jpg" alt="Background 1" />
+              <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background 1" />
               <h1>Computer and Networking</h1>
               <h3>15 auctions</h3>
               <button type="button">View More</button>
@@ -113,7 +113,7 @@ const HomePage = () => {
           
           <div className="Electronic-components">
             <div className="Electronic-components-info">
-              <img src="/Images/background 2.jpg" alt="Background 2" />
+              <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background 2" />
               <h1>Electronic Components</h1>
               <h3>15 auctions</h3>
               <button type="button">View More</button>
@@ -125,7 +125,7 @@ const HomePage = () => {
 
           <div className="Gadgets-and-devices">
             <div className="Gadgets-and-devices-info">
-              <img src="/Images/background 3.jpg" alt="Background 3" />
+              <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background 3" />
               <h1>Gadgets and Devices</h1>
               <h3>15 auctions</h3>
               <button type="button">View More</button>
@@ -134,7 +134,7 @@ const HomePage = () => {
 
           <div className="Home-appliances">
             <div className="Home-appliances-info">
-              <img src="/Images/background 4.jpg" alt="Background 4" />
+              <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background 4" />
               <h1>Home Appliances</h1>
               <h3>15 auctions</h3>
               <button type="button">View More</button>
@@ -143,7 +143,6 @@ const HomePage = () => {
 
         </div>
       </div>
-      
     </div>
   );
 };

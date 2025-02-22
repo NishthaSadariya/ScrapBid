@@ -174,7 +174,7 @@ html {
     height: auto;
     object-fit: cover;
     filter: brightness(0.5)
-  }
+  } 
   
   /* Individual Image Heights */
   .Computer-and-networking img { height: 350px; }
@@ -221,4 +221,3 @@ html {
     background: white;
     color:#87CEFA
   }
-  
