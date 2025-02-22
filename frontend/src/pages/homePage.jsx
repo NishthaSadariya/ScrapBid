@@ -97,6 +97,52 @@ const HomePage = () => {
         ))}
       </div>
       
+      {/* category */}
+      <div className="category-container">
+
+        <div className="column-1">
+          
+          <div className="Computer-and-networking">
+            <div className="Computer-and-networking-info">
+              <img src="/Images/background 1.jpg" alt="Background 1" />
+              <h1>Computer and Networking</h1>
+              <h3>15 auctions</h3>
+              <button type="button">View More</button>
+            </div>
+          </div>
+          
+          <div className="Electronic-components">
+            <div className="Electronic-components-info">
+              <img src="/Images/background 2.jpg" alt="Background 2" />
+              <h1>Electronic Components</h1>
+              <h3>15 auctions</h3>
+              <button type="button">View More</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="column-2">
+
+          <div className="Gadgets-and-devices">
+            <div className="Gadgets-and-devices-info">
+              <img src="/Images/background 3.jpg" alt="Background 3" />
+              <h1>Gadgets and Devices</h1>
+              <h3>15 auctions</h3>
+              <button type="button">View More</button>
+            </div>
+          </div>
+
+          <div className="Home-appliances">
+            <div className="Home-appliances-info">
+              <img src="/Images/background 4.jpg" alt="Background 4" />
+              <h1>Home Appliances</h1>
+              <h3>15 auctions</h3>
+              <button type="button">View More</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
       
     </div>
   );
