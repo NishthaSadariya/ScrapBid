@@ -3,6 +3,11 @@ import React from "react";
 import "../styles/productCard.css";
 import { FaGavel, FaRegHeart } from "react-icons/fa";
 
+const formatPrice = (price) => {
+    const number = parseInt(price.replace(/₹/, ""), 10);
+    return `₹${number.toLocaleString("en-IN")}`;
+};
+
 const ProductCard = ({ product }) => {
   return (
     <div className="product-card-container">
@@ -17,7 +22,7 @@ const ProductCard = ({ product }) => {
         <div className="product-info">
           <h3>{product.name}</h3>
           <p>
-            Starting Bid: <strong>{product.price}</strong>
+            Starting Bid: <strong>{formatPrice(product.price)}</strong>
           </p>
         </div>
       </div>
