@@ -1,37 +1,67 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #191970;
+    background-color: #001F48; /* Same navy blue */
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 170px;
+    font-size: 16px;
 }
 
-
-.order{
-    position: relative;
-    color: #fff;
+.header-left {
+    display: flex;
+    align-items: center;
 }
 
-.order svg {
-    position: relative;
-    top: 10px; 
-    left: -10px;
-    height: 25px;
-    width: 25px;
-  }
-
-.heart svg{
-    position: relative;
-    color: #fff;
-    width: 16px;
-    height: 16px;
-    top:2.5px;   
-    right:2.5px;
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
-.sign-in{
-    margin: 0 10px;
+.icon {
+    position: relative;
+    top: -1px;
+    margin-right: 5px;
+}
+
+.gavel-icon {
     color: #fff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.mybid {
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.mybid:hover {
+    color: #87CEFA;
+}
+
+.heart {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.heart .heart-icon {
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.heart:hover {
+    color: #87CEFA;
+}
+
+.heart:hover .heart-icon {
+    color: #87CEFA;
 }
