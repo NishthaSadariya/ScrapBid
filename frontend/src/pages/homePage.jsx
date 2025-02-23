@@ -29,7 +29,11 @@ const HomePage = () => {
 
       {/* Image Section */}
       <div className="image-container">
-        <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background" />
+        <img src="/Images/background 4.webp" loading="lazy" alt="Background" />
+        <div className="first-img-text">
+          <h1>Give e-waste a second life, not a landfill!</h1>
+          <p>Bid, buy, and make a difference</p>
+        </div>
       </div>
 
       {/* text on image */}
@@ -113,7 +117,7 @@ const HomePage = () => {
           
           <div className="Computer-and-networking">
             <div className="Computer-and-networking-info">
-              <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background 1" />
+              <img src="/Images/background 2.webp" loading="lazy" alt="Background 1" />
               <h1>Computer and Networking</h1>
               <h3>{categoryCounts["Computer and Networking"] || 0} Auctions</h3>
               <button type="button">View More</button>
@@ -122,7 +126,7 @@ const HomePage = () => {
           
           <div className="Electronic-components">
             <div className="Electronic-components-info">
-              <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background 2" />
+              <img src="/Images/background 1.webp" loading="lazy" alt="Background 2" />
               <h1>Electronic Components</h1>
               <h3>{categoryCounts["Electronic components"] || 0} Auctions</h3>
               <button type="button">View More</button>
@@ -134,7 +138,7 @@ const HomePage = () => {
 
           <div className="Gadgets-and-devices">
             <div className="Gadgets-and-devices-info">
-              <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background 3" />
+              <img src="/Images/background 3.webp" loading="lazy" alt="Background 3" />
               <h1>Gadgets and Devices</h1>
               <h3>{categoryCounts["Gadgets and Devices"] || 0} Auctions</h3>
               <button type="button">View More</button>
@@ -143,7 +147,7 @@ const HomePage = () => {
 
           <div className="Home-appliances">
             <div className="Home-appliances-info">
-              <img src="/Images/ScrapBidHome.jpg" loading="lazy" alt="Background 4" />
+              <img src="/Images/background 5.webp" loading="lazy" alt="Background 4" />
               <h1>Home Appliances</h1>
               <h3>{categoryCounts["Home appliances"] || 0} Auctions</h3>
               <button type="button">View More</button> 
@@ -156,12 +160,19 @@ const HomePage = () => {
       {/* highest bidding products category wise */}
       
       <div className="highest-bidding-category">
-        <CategorySection category="Computer and Networking" categoryImage="/Images/ScrapBidHome.jpg" />
-        <CategorySection category="Electronic components" categoryImage="/Images/ScrapBidHome.jpg" />
-        <CategorySection category="Gadgets and Devices" categoryImage="/Images/ScrapBidHome.jpg" />
-        <CategorySection category="Home appliances" categoryImage="/Images/ScrapBidHome.jpg" />
+        <CategorySection category="Computer and Networking" categoryImage="/Images/background 2.webp" />
+        <CategorySection category="Electronic components" categoryImage="/Images/background 1.webp" />
+        <CategorySection category="Gadgets and Devices" categoryImage="/Images/background 3.webp" />
+        <CategorySection category="Home appliances" categoryImage="/Images/background 5.webp" />
       </div>
       
+      <div className="last-img">
+        <img src="Images/background 4.webp" alt="last background"/>
+          <div className="last-img-text">
+            <h1>Sustainability starts with a single bid!</h1>
+            <p>Reuse today for a greener tomorrow.</p>
+        </div>
+      </div>
     </div>
   );
 };
