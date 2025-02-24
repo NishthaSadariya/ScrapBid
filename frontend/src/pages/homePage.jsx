@@ -7,6 +7,7 @@ import products from "../data/data";
 import { Gavel, Recycle, Truck, CreditCard } from "lucide-react";
 import {FaGavel} from "react-icons/fa"; 
 import CategorySection from "../components/highestCategorySection";
+import Footer from "../components/footer";
 
 // Sort by highest bid price and select top 4 products
 const featuredProducts = [...products]
@@ -173,6 +174,9 @@ const HomePage = () => {
             <p>Reuse today for a greener tomorrow.</p>
         </div>
       </div>
+
+      <Footer />
+      
     </div>
   );
 };
