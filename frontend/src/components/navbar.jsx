@@ -1,7 +1,7 @@
 import React from "react";
-import { BiSearch } from "react-icons/bi"; 
-import { BsCartFill } from "react-icons/bs";
 import "../styles/navbar.css";
+import { BsCartFill } from "react-icons/bs";
+import SearchBox from "./searchBox";
 
 const Navbar = () => {
   return (
@@ -11,20 +11,9 @@ const Navbar = () => {
         <span className="s-letter">S</span>crap
         <span className="b-letter">B</span>id
       </strong>
-
-      {/* Search Bar */}
-      <div className="search-bar">
-        <select className="category-dropdown">
-          <option>All</option>
-          <option>Computer and Networking</option>
-          <option>Electronic Components</option>
-          <option>Gadgets and Devices</option>
-          <option>Home Appliences</option>
-        </select>
-        <input type="text" placeholder="Search here..." className="search-input" />
-        <button className="search-btn">
-          <BiSearch size={20} /> 
-        </button>
+      
+      <div>
+       <SearchBox />
       </div>
 
       {/* Navigation Links */}
