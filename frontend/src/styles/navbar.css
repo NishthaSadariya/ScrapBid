@@ -54,3 +54,34 @@
 .cart-btn svg {
     margin-right: 8px;
 }
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .category-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  
+  .category-list a {
+    padding: 10px   ;
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+  .category-list a:hover {
+    background-color: #f0f0f0;
+  }
+  

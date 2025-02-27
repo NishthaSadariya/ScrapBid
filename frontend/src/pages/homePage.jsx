@@ -37,18 +37,6 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* text on image */}
-      {/* <div className="text-overlay">
-                <h1>
-                    {"Empowering Sustainability Through E-Waste Auctions".split("").map((char, index) => (
-                        <span key={index} style={{ animationDelay: `${index * 0.05}s` }}>
-                            {char === " " ? "\u00A0" : char} 
-                        </span>
-                    ))}
-                </h1>
-                <p>Join us in reducing waste and giving products a second life.</p>
-            </div> */}
-
       {/* after image section*/}
       <div className="blue-flex-container">
         <div className="inside-flex-items-main">

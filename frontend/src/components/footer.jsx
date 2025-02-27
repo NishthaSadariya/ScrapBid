@@ -65,9 +65,7 @@ const Footer = () => {
 
       {/* last footer section */}
       <div className="footer-bottom">
-        <div>
             <p>@ 2025 SmartSeller. All rights preserved.</p>
-        </div>
       </div>
     </div>
   );
